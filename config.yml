@@ -325,7 +325,7 @@ checks:
       active: default
       actions: cancel vl>100 cancel log:munchhausen:0:60:if
     yawrate:
-      rate: 105
+      rate: 125
       penalty:
         factor: 2.0
         minimum: 250
