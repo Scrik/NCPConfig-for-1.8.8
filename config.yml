@@ -484,7 +484,7 @@ checks:
       active: default
       seconds: 6
       epsideal: 20
-      epsmax: 22
+      epsmax: 24
       burst:
         packets: 15
         directviolation: 10
