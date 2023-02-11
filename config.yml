@@ -360,7 +360,7 @@ checks:
       strict: true
       failall: true
       penalty: 75
-      actions: vl>2 log:fdirectionlowvl:5:6:i vl>10 cancel log:fdirection:2:4:if vl>50 cancel log:fdirection:0:7:icf cmdc:kicksuspiciouscombat:1:5
+      actions: cancel vl>10 log:fdirection:2:4:if vl>50 cancel log:fdirection:0:7:icf cmdc:kicksuspiciouscombat:1:5
     fastheal:
       active: default
       interval: 4000
