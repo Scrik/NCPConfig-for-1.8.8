@@ -484,7 +484,7 @@ checks:
       active: default
       seconds: 6
       epsideal: 20
-      epsmax: 24
+      epsmax: 23
       burst:
         packets: 15
         directviolation: 10
@@ -499,7 +499,7 @@ checks:
       resetonteleport: false
       resetonvehicle: true
       anticriticals: true
-      actions: cancel vl>2 cancel log:nofall:0:5:if
+      actions: vl>15 cancel log:nofall:0:5:if
     passable:
       active: default
       actions: cancel vl>15 cancel log:passable:7:9:i vl>100 cancel log:passable:1:4:if
@@ -548,7 +548,7 @@ checks:
       setbackpolicy:
         falldamage: true
         voidtovoid: false
-      actions: cancel log:flyfile:6:15:f vl>100 cancel log:survivalfly:10:11:i log:flyfile:6:15:f vl>700 cancel log:survivalfly:8:5:i log:flyfile:1:3:f vl>2100 cancel log:survivalflyhighvl:0:4:icf cmdc:kickfly:0:15
+      actions: log:flyfile:6:15:f vl>100 log:survivalfly:10:11:i log:flyfile:6:15:f vl>700 cancel log:survivalfly:8:5:i log:flyfile:1:3:f vl>2100 cancel log:survivalflyhighvl:0:4:icf cmdc:kickfly:0:15
       hover:
         active: true
         step: 5
